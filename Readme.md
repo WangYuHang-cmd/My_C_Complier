@@ -4,8 +4,6 @@
 
 ![1672686222390](image/Readme/1672686222390.png)
 
-
-
 本项目完成了一个基本的C语言编译器，目前阶段主要完成了以下功能：
 
 **功能实现：**
@@ -18,8 +16,6 @@
 * [X] 目标代码生成
   * [X] 生成MIPS汇编指令
   * [X] 目标代码可使用MARS运行
-
-
 
 #### 运行方式
 
@@ -38,7 +34,6 @@
 * 陆欣驰202083260194：词法分析，readme文档书写
 * 吕正202083260078：类型检查，readme文档书写
 * 孙世昂202083290054：中间代码生成，readme文档书写
-
 
 #### 项目内容
 
@@ -77,6 +72,14 @@
 `parser.exe ` 编译器项目最终可执行文件
 
 `object.s` 生成的MIPS格式汇编指令
+
+`test1.c` 测试文件1
+
+`test2.c` 测试文件2
+
+`test3.c` 测试文件3
+
+`test4.c` 测试文件4
 
 
 #### 运行结果
@@ -324,7 +327,6 @@ label3:
 label2:
 ```
 
-
 编写 `test4.c`文件：
 
 ```cpp
@@ -356,9 +358,7 @@ int main(){
 
 孙世昂：本次实验中我主要负责中间代码生成模块，通过在其他组员完成的词法分析和语法分析的模块基础上，在已经生成语法分析树的前提下，通过编写程序实现了将语法树转换为三地址码，并设置了一个单链表的存储结构存储生成的三地址码，完成了中间代码生成的工作，为后面目标代码生成提供了条件。此次课程设计中我与小组队员一同查阅了大量资料，在实践过程中加深了对课程知识的掌握，深入的体会了编译的过程，极大提高了对编译原理课程的理解。
 
-
 更多详情: https://github.com/WangYuHang-cmd/My_C_Complier
-
 
 #### 参考链接：
 
@@ -371,8 +371,6 @@ int main(){
 参考了部分parser.c的内容并转化使用进了parser.y https://download.csdn.net/download/downk/16347479?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-16347479-blog-78745868.pc_relevant_3mothn_strategy_and_data_recovery&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-16347479-blog-78745868.pc_relevant_3mothn_strategy_and_data_recovery&utm_relevant_index=1
 
 参考部分flex编写内容 https://github.com/gamesgao/ComplierForSmallC/blob/master/Simple.lex
-
-
 
 #### 学习博客：
 
