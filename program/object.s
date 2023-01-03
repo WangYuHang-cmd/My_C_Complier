@@ -19,43 +19,23 @@ write:
   move $v0,$0
   jr $ra
 
-main:
-  addi $sp, $sp, -40
-  li $t3, 0
-  sw $t3, 20($sp)
-  lw $t1, 6605504($sp)
-  move $t3, $t1
-  sw $t3, 12($sp)
-  li $t3, 0
-  sw $t3, 24($sp)
-  lw $t1, 24($sp)
-  move $t3, $t1
+solve:
+  li $t3, 5
   sw $t3, 16($sp)
-  li $t3, 3
-  sw $t3, 36($sp)
-  lw $t1, 16($sp)
-  lw $t2, 36($sp)
-  blt $t1,$t2,label2
-  j label1
-label3:
-  li $t3, 1
-  sw $t3, 28($sp)
-  lw $t1, 16($sp)
-  lw $t2, 28($sp)
-  add $t3,$t1,$t2
-  sw $t3, 32($sp)
-  lw $t1, 32($sp)
+  lw $t1, 0($sp)
   move $t3, $t1
-  sw $t3, 16($sp)
-label2:
-  li $t3, 1
-  sw $t3, 36($sp)
-  lw $t1, 16($sp)
-  lw $t2, 36($sp)
-  add $t3,$t1,$t2
-  sw $t3, 40($sp)
-  lw $t1, 40($sp)
-  move $t3, $t1
-  sw $t3, 16($sp)
-  j label3
+  sw $t3, 0($sp)
+  lw $v0,12($sp)
+  jr $ra
 label1:
+
+main:
+  addi $sp, $sp, -20
+  lw $t1, 7298320($sp)
+  move $t3, $t1
+  sw $t3, 0($sp)
+  li $t3, 0
+  sw $t3, 16($sp)
+  lw $v0,16($sp)
+  jr $ra
+label2:
